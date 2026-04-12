@@ -69,6 +69,10 @@
     letter-spacing: 0.5px;
   }
 
+  .status-tag.ongoing {
+    background-color: #fe9339;
+  }
+
   /* Force all text to be left-aligned */
   .case-study-section,
   .case-study-section *,
@@ -97,7 +101,7 @@
   .section-title {
     font-family: 'Source Serif 4', serif;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 48px;
     margin-bottom: 32px;
     text-align: left !important;
     color: #282f40;
@@ -666,7 +670,7 @@
     }
     
     .section-title {
-      font-size: 48px;
+      font-size: 36px;
     }
     
     .project-title {
@@ -743,7 +747,7 @@
   .comparison-box img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 0;
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     margin-bottom: 24px;
   }
@@ -769,15 +773,15 @@
 
   .highlight-item img {
     width: 100%;
-    border-radius: 24px !important;
-    border: 32px solid #e3e3e3 !important;
+    border-radius: 12px !important;
+    border: none !important;
     box-shadow: 0 4px 20px rgba(0,0,0,0.08) !important;
     margin-top: 24px;
   }
 
   @media (max-width: 768px) {
     .highlight-item img {
-      border: 16px solid #e3e3e3 !important;
+      border: none !important;
     }
   }
 
@@ -1066,45 +1070,53 @@
     <div class="hero-content">
       <div class="project-company" style="font-family: 'aktiv-grotesk', sans-serif; font-size: 24px; margin-bottom: 8px; color: #282f40; text-align: left !important;">
         <span>@Salesforce</span>
-        <span class="status-tag">Delivered</span>
+        <span class="status-tag ongoing">ON-GOING</span>
       </div>
       <h1 class="project-title">Platform Rebuild</h1>
-      <p class="project-tagline">The UX Master Repo: Scaling Experience Coherence via AI-Driven Infrastructure.</p>
+      <p class="project-tagline">A high-stakes Experience Infrastructure initiative to stabilize and scale a platform-wide rebuild by engineering AI-governance layers and a tokenized design system for a high-velocity, "vibe-coding" environment.</p>
     </div>
   </section>
 
   <!-- 1. Project Brief -->
   <section class="case-study-section">
     <div class="container">
-      <h2 class="section-title">01 Project Brief</h2>
+      <h3 class="section-title">01 Project Brief</h3>
       
       <div class="brief-grid-new">
         <div class="brief-left">
           <div class="brief-item" style="margin-bottom: 48px;">
             <h3 class="heading_h3">Goal</h3>
-            <p>Empower the developers to visually map and transform data flawlessly by reducing learning curve and cognitive load while maintaining the power of the DataWeave language.</p>
+            <p>To transform a fragmented, AI-accelerated development environment into a governed, scalable infrastructure that ensures experience coherence  and design-to-code integrity without sacrificing development speed.</p>
           </div>
           <div class="brief-item">
             <h3 class="heading_h3">Users</h3>
-            <p>The users of DataWeave and Anypoint Code Builder generally fall into two distinct categories: </br>Novices users who may not have a formal coding background at all, working in roles like Systems Administrators; </br>And Experts who hold roles such as Integration Architects and Engineering Leaders, and they deal with highly complex, enterprise-level transformations.</p>
+            <ul>
+              <li><b>The "Elite" Core Team:</b> 30+ engineers, product managers, architects and designers using vibe-coding to rebuild the platform in real-time.</li>
+              <li><b>AI Agents (Claude/Cursor):</b> Functioning as primary contributors that require strict logic and rule-based guardrails to generate high-quality UI.</li>
+              <li><b>Future Contributors:</b> Developers who need a scalable, tokenized framework that adapts to new components automatically.</li>
+            </ul>
           </div>
         </div>
         
         <div class="brief-right-stack">
           <div class="brief-item">
             <h3 class="heading_h3">Team</h3>
-            <p>UX Team - Me 😎;<br/>
-               Engineering Team - 7 engineers;<br/>
-               Product Management Team - 2 product managers;<br/>
-               Technical Writing Team - 2 technical writers</p>
+            <ul>
+              <li><b>UX Team:</b> 7 principal-level designers plus me 😎</li>
+              <li><b>Engineering Team:</b> 30 engineers</li>
+              <li><b>Product Management Team:</b> 5 product managers</li>
+              <li><b>Technical Writing Team:</b> 3 technical writers</li>
+            </ul>
           </div>
           
           <div class="brief-item">
             <h3 class="heading_h3">Skills</h3>
-            <p>User Research<br/>
-               User Experience Design<br/>
-               Motion Design<br/>
-               Visual Design</p>
+            <ul>
+              <li>Experience Infrastructure</li>
+              <li>Agentic Governance</li>
+              <li>Systems Refactoring</li>
+              <li>Scalable Architecture</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -1116,14 +1128,14 @@
     <div class="container">
       <div class="before-after-grid">
         <div class="comparison-box">
-          <img src="images/Transformation/before_transform.png" alt="Before Screenshot" />
+          <img src="images/Platform/before_rebuild.png" alt="Before Screenshot" />
           <h3>Before</h3>
-          <p class="paragraph_small">The legacy UI is cramped and difficult to navigate, and critical features such as validation and testing is missing.</p>
+          <p class="paragraph_small">A "Frankenstein" repository of fragmented styles, conflicting libraries, and unmanaged technical debt with no unified development process.</p>
         </div>
         <div class="comparison-box">
-          <img src="images/Transformation/after_transform.png" alt="After Screenshot" />
+          <img src="images/platform/after_rebuild.png" alt="After Screenshot" />
           <h3>After</h3>
-          <p class="paragraph_small">The new transformation experience allows for intuitive drag-and-drop mapping, real-time validation, and Agentic assistance.</p>
+          <p class="paragraph_small">A unified experience infrastructure and automated development process that scales design logic and system compliance through a master rule+skill+token framework.</p>
         </div>
       </div>
     </div>
@@ -1132,10 +1144,10 @@
   <!-- 2. UX Approach -->
   <section class="case-study-section">
     <div class="container">
-      <h2 class="section-title">02 UX Approach</h2>
-      <p>A user-centered design process was followed to ensure the platform met the needs of both novice and expert developers. From discovery to delivery, we iterated based on continuous feedback.</p>
+      <h3 class="section-title">02 My Approach</h3>
+      <p>This infrastructure flow stabilizes the platform by sanitizing legacy technical debt, establishing agentic governance through rule-based AI guardrails, and architecting a scalable referencing system to ensure long-term design coherence.</p>
       <div class="full-width-image" style="margin-top: 48px;">
-        <img src="images/Transformation/UX Approach_transform.png" alt="Design Process / UX Approach" style="width: 100%; border-radius: 12px;" />
+        <img src="images/Platform/UX Approach_platform.png" alt="Design Process / UX Approach" style="width: 100%; border-radius: 12px;" />
       </div>
     </div>
   </section>
@@ -1143,100 +1155,96 @@
   <!-- 3. Highlights -->
   <section class="case-study-section bg-grey">
     <div class="container">
-      <h2 class="section-title">03 Highlights</h2>
+      <h3 class="section-title">03 Foundation: The One-Time Migration</h3>
       
       <div class="highlight-item">
-        <h3 class="subsection-title">Intuitive Drag-and-Drop Functionality</h3>
-        <blockquote style="background: #f0f4f8; border-left: 4px solid rgb(25, 65, 158); padding: 24px 32px; margin: 32px 0; font-size: 28px; font-style: italic; line-height: 1.5; color: rgb(25, 65, 158); text-align: left !important;">
-            "To do anything complex requires using dataweave. I have to crack open google to look up some esoteric function for dataweave. Why does this require me to learn a new language - It is a stumbling block."
-            <footer style="margin-top: 16px; font-size: 16px; font-style: normal; color: #666; text-align: right !important;">— User in Transformation Workshop</footer>
-          </blockquote>
-        <p>The new visual mapper allows users to simply drag an input field and drop it onto an output field (or a function) to instantly generate the underlying DataWeave code. It boosts productivity and meanwhile educates novice users with well-crafted DataWeave codes</p>
-        <img src="images/Canvas/nav_canvas.gif" alt="Highlight 1" />
+        <h3 class="subsection-title">Step 1: Token Injection</h3>
+        <p>Introduced a centralized library of Color, Typography, Iconography, Layout and Depth & Elevation tokens directly into the master Git repository to establish the new source of truth.</p>
+        <img src="images/Platform/Token Injection.png" alt="Highlight 1" />
       </div>
 
       <div class="highlight-item">
-        <h3 class="subsection-title">A "Playground-Like" Testing Experience</h3>
-        <blockquote style="background: #f0f4f8; border-left: 4px solid rgb(25, 65, 158); padding: 24px 32px; margin: 32px 0; font-size: 28px; font-style: italic; line-height: 1.5; color: rgb(25, 65, 158); text-align: left !important;">
-            "Documentation doesn’t have enough examples. If new user, one or two examples doesn’t really help, and examples are basic ones, i’ll need higher level hands-on practice."
-            <footer style="margin-top: 16px; font-size: 16px; font-style: normal; color: #666; text-align: right !important;">— User in Transformation Workshop</footer>
-          </blockquote>
-        <p>A dedicated Preview panel allows developers to easily tinker, test functions, and see instant output with sample data without the heavy overhead of running a full debug session or setting up a complex project just to practice</p>
-        <img src="images/Canvas/settings_canvas.gif" alt="Highlight 2" />
+        <h3 class="subsection-title">Step 2: AI-Driven Audit</h3>
+        <p>Leveraged AI to crawl the codebase and generate a comprehensive map of all legacy CSS classes and hard-coded values alongside suggested token mappings.</p>
+        <img src="images/Platform/AI-Driven Audit.png" alt="Highlight 2" />
       </div>
 
       <div class="highlight-item">
-        <h3 class="subsection-title">Generative AI Capabilities</h3>
-        <p>The new experience integrates Generative AI, allowing users to automatically generate complex DataWeave transformations by simply providing sample input/output data and natural language instructions. The AI can auto-map fields, explain the generated scripts, and provide quick fixes for errors, drastically speeding up development time.</p>
-        <img src="images/Connect.jpeg" alt="Highlight 2" />
+        <h3 class="subsection-title">Step 3: Human-in-the-Loop Validation</h3>
+        <p>Conducted a manual review to resolve complex mapping conflicts, audit AI suggestions for accuracy, and define new tokens for unique edge cases that the AI could not categorize.</p>
+        <img src="images/Platform/Human-in-the-Loop Validation.png" alt="Highlight 2" />
       </div>
+
+      <div class="highlight-item">
+        <h3 class="subsection-title">Step 4: Systemic AI Execution</h3>
+        <p>Requested the AI to perform a coordinated, project-wide migration, swapping thousands of legacy instances for standardized tokens to ensure experience coherence.</p>
+        <img src="images/Platform/Systemic AI Execution.png" alt="Highlight 2" />
+      </div>
+
     </div>
   </section>
 
   <!-- 4. Closing Notes -->
   <section class="case-study-section">
     <div class="container">
-      <h2 class="section-title">04 Closing Notes</h2>
+      <h3 class="section-title">04 Governance: The Rule + Skill Layer</h3>
       
-      <div class="closing-grid">
-        <!-- Impact Section -->
-        <div class="closing-item">
-          <h3 class="subsection-title">Impact</h3>
-          <div class="metrics-grid-3col">
-            <div class="metric-item-new">
-              <div class="metric-header">
-                <span class="metric-number">30%</span>
-                <span class="metric-arrow">▲</span>
-              </div>
-              <span class="metric-label-green">Increase in Productivity</span>
-              <p class="metric-description">Significant reduction in manual coding and configuration errors led to much faster project completion.</p>
-            </div>
-            
-            <div class="metric-item-new">
-              <div class="metric-header">
-                <span class="metric-number">40%</span>
-                <span class="metric-arrow">▲</span>
-              </div>
-              <span class="metric-label-green">Better Accuracy and Correctness</span>
-              <p class="metric-description">Generated scripts are more accurate and correct, reducing the need for manual corrections.</p>
-            </div>
-            
-            <div class="metric-item-new">
-              <div class="metric-header">
-                <span class="metric-number">25%</span>
-                <span class="metric-arrow">▲</span>
-              </div>
-              <span class="metric-label-green">User Satisfaction</span>
-              <p class="metric-description">NPS scores among developers increased by a quarter after adopting the new canvas-based editor.</p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Takeaways Section -->
-        <div class="closing-item">
-          <h3 class="subsection-title" style="margin-top: 0;">Takeaways</h3>
-          <div class="takeaways-list">
-            <div class="takeaway-row">
-              <span class="takeaway-number">01</span>
-              <p class="takeaway-text">Successfully transformed a complex and challenging coding exercise into a intuitive, productive and joyful experience without compromising on functionality or performance.</p>
-            </div>
-            
-            <div class="takeaway-row">
-              <span class="takeaway-number">02</span>
-              <p class="takeaway-text">Leveraged close collaboration across design, product, and engineering to translate technical complexity into a clear, no-code user experience.</p>
-            </div>
-            
-            <div class="takeaway-row">
-              <span class="takeaway-number">03</span>
-              <p class="takeaway-text">Learned to prioritize ruthlessly in high-pressure environments, focusing on what delivered the most value within tight timelines.</p>
-            </div>
-          </div>
-        </div>
+      <div class="highlight-item">
+        <h3 class="subsection-title">The .claude.md Rule Files</h3>
+        <p><b>The "Source of Truth":</b> I authored and maintained central rule files that define the "code of conduct" for all AI contributions.</br>
+          <b>Logic Constraints:</b> These files provided strict instructions on token usage, layout patterns, and component hierarchy to prevent "design drift" during vibe-coding sessions.</p>
+      </div>
+
+      <div class="highlight-item">
+        <h3 class="subsection-title">AI Skill Files (Automated Enforcement)</h3>
+        <p>To scale design capacity, I developed specialized AI "skills" that act as automated quality gates in the development lifecycle:</p>
+        <ul>
+          <li><b>PR-Readiness & Review:</b> Automated checks to ensure that new code adheres to the master repo's architectural standards before it reaches human review.</li>
+          <li><b>Accessibility Check:</b> A built-in skill that audits every generated UI component for WCAG 2.1 compliance in real-time.</li>
+        </ul>
+        <img src="images/Platform/Governance Stack.png" alt="Highlight 2" />
       </div>
     </div>
   </section>
 
-  <!-- Back Navigation -->
+  <section class="case-study-section bg-grey">
+    <div class="container">
+      <h3 class="section-title">05 Evolution: The The Scalable Infrastructure</h3>
+      
+      <div class="highlight-item">
+        <h3 class="subsection-title">The Hierarchy of Truth</h3>
+        <ul>
+          <li>The Master Gate (claude.md): This serves as the entry point for the AI, containing high-level design principles and global constraints to prevent "design drift".</li>
+          <li>Domain-Specific Rules: The system branches into specialized files for Typography, Color, Spacing, and Icons, allowing AI agents to call only the context relevant to the current task.</li>
+          <li>Deep Component Specs: By organizing logic into sub-directories (e.g., /components/buttons.md), the AI has access to granular technical specifications and implementation examples.</li>
+        </ul>
+        <img src="images/Platform/The Cross-Reference Map.png" alt="Highlight 1" />
+      </div>
+
+      <div class="highlight-item">
+        <h3 class="subsection-title">Automated Quality Gates (The "Skills")</h3>
+        <p>I established two critical agentic workflows that integrate the rules and skills to maintain repository health and scale design capacity:</p>
+        <ul>
+          <li>pr-readiness.md: A pre-submission skill where the AI scans for UI changes, validates them against the design specs, and flags violations before human review.</li>
+          <li>pr-review.md: A secondary compliance check by reviewers that suggests optimizations based on core design principles and pattern consistency.</li>
+        </ul>
+        <p>It resulted in <b>0% hard-coded values</b> in the master repo since implementation; <b>40% reduction</b> in manual UI review cycles.</p>
+        <img src="images/Platform/Automated Quality Gates.png" alt="Highlight 2" />
+      </div>
+
+      <div class="highlight-item">
+        <h3 class="subsection-title">Cross-Referencing Logic</h3>
+        <p>To maximize both system accuracy and agent performance, I implemented a dynamic referencing model using a specialized tagging syntax (e.g., @typography.md, @color.md).</p>
+        <ul>
+          <li>Context-Aware Injection: Rather than forcing the AI to process a massive, 10,000-line “Master Guide,” this structure allows the agent to selectively read only the relevant guidance needed for the specific task at hand (e.g., only loading buttons.md when building a form).</li>
+          <li>Performance & Accuracy: By minimizing the "noise" in the AI’s context window, this modular approach significantly increases response accuracy, reduces hallucination rates, and improves generation speed.</li>
+          <li>Dynamic Synchronization: This infrastructure ensures that when a token is updated in a specialized "leaf" file, the change propagates across the entire agentic system automatically, maintaining a "Living Source of Truth" without manual logic updates.</li>
+        </ul>
+        <img src="images/Platform/Context Window Optimization.png" alt="Highlight 2" />
+      </div>
+
+    </div>
+      <!-- Back Navigation -->
   <div class="back-navigation">
     <a href="index.html#work" class="back-link">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -1245,6 +1253,9 @@
       Back to Work
     </a>
   </div>
+  </section>
+
+
 
   </div> <!-- End Protected Content -->
 
@@ -1255,7 +1266,7 @@
       <div class="footer_bottom-3-col">
         <a href="#" class="logo w-inline-block"></a>
         <ul role="list" aria-label="Social media links" class="footer_icon-group w-list-unstyled">
-          <!-- Social links here -->
+          <li class="margin-bottom_none"><a href="https://www.facebook.com/cmq92811" target="_blank" class="footer_icon-link w-inline-block"><div class="icon_small-1x1 text-color_inherit"><svg width="100%" height="100%" viewBox="0 0 16 16"><path d="M16,8.048a8,8,0,1,0-9.25,7.9V10.36H4.719V8.048H6.75V6.285A2.822,2.822,0,0,1,9.771,3.173a12.2,12.2,0,0,1,1.791.156V5.3H10.554a1.155,1.155,0,0,0-1.3,1.25v1.5h2.219l-.355,2.312H9.25v5.591A8,8,0,0,0,16,8.048Z" fill="currentColor"></path></svg></div><div class="screen-reader">Facebook</div></a></li><li class="margin-bottom_none"><a href="https://www.instagram.com/airgnne?igsh=NTc4MTIwNjQ2YQ%3D%3D&amp;utm_source=qr" target="_blank" class="footer_icon-link w-inline-block"><div class="icon_small-1x1 text-color_inherit"><svg width="100%" height="100%" viewBox="0 0 16 16"><path d="M8,1.441c2.136,0,2.389.009,3.233.047a4.419,4.419,0,0,1,1.485.276,2.472,2.472,0,0,1,.92.6,2.472,2.472,0,0,1,.6.92,4.419,4.419,0,0,1,.276,1.485c.038.844.047,1.1.047,3.233s-.009,2.389-.047,3.233a4.419,4.419,0,0,1-.276,1.485,2.644,2.644,0,0,1-1.518,1.518,4.419,4.419,0,0,1-1.485.276c-.844.038-1.1.047-3.233.047s-2.389-.009-3.233-.047a4.419,4.419,0,0,1-1.485-.276,2.472,2.472,0,0,1-.92-.6,2.472,2.472,0,0,1-.6-.92,4.419,4.419,0,0,1-.276-1.485c-.038-.844-.047-1.1-.047-3.233s.009-2.389.047-3.233a4.419,4.419,0,0,1,.276-1.485,2.472,2.472,0,0,1,.6-.92,2.472,2.472,0,0,1,.92-.6,4.419,4.419,0,0,1,1.485-.276c.844-.038,1.1-.047,3.233-.047M8,0C5.827,0,5.555.009,4.7.048A5.868,5.868,0,0,0,2.76.42a3.908,3.908,0,0,0-1.417.923A3.908,3.908,0,0,0,.42,2.76A5.868,5.868,0,0,0,.048,4.7C.009,5.555,0,5.827,0,8s.009,2.445.048,3.3A5.868,5.868,0,0,0,.42,13.24a3.908,3.908,0,0,0,.923,1.417,3.908,3.908,0,0,0,1.417.923,5.868,5.868,0,0,0,1.942.372C5.555,15.991,5.827,16,8,16s2.445-.009,3.3-.048a5.868,5.868,0,0,0,1.942-.372,4.094,4.094,0,0,0,2.34-2.34,5.868,5.868,0,0,0,.372-1.942c.039-.853.048-1.125.048-3.3s-.009-2.445-.048-3.3A5.868,5.868,0,0,0,15.58,2.76a3.908,3.908,0,0,0-.923-1.417A3.908,3.908,0,0,0,13.24.42,5.868,5.868,0,0,0,11.3.048C10.445.009,10.173,0,8,0Z" fill="currentColor"></path><path d="M8,3.892A4.108,4.108,0,1,0,12.108,8,4.108,4.108,0,0,0,8,3.892Zm0,6.775A2.667,2.667,0,1,1,10.667,8,2.667,2.667,0,0,1,8,10.667Z" fill="currentColor"></path><circle cx="12.27" cy="3.73" r="0.96" fill="currentColor"></circle></svg></div><div class="screen-reader">Instagram<br/></div></a></li><li class="margin-bottom_none"><a href="https://www.linkedin.com/in/mengqi-chen-b68051a3/" target="_blank" class="footer_icon-link w-inline-block"><div class="icon_small-1x1 text-color_inherit"><svg width="100%" height="100%" viewBox="0 0 16 16"><path d="M15.3,0H0.7C0.3,0,0,0.3,0,0.7v14.7C0,15.7,0.3,16,0.7,16h14.7c0.4,0,0.7-0.3,0.7-0.7V0.7 C16,0.3,15.7,0,15.3,0z M4.7,13.6H2.4V6h2.4V13.6z M3.6,5C2.8,5,2.2,4.3,2.2,3.6c0-0.8,0.6-1.4,1.4-1.4c0.8,0,1.4,0.6,1.4,1.4 C4.9,4.3,4.3,5,3.6,5z M13.6,13.6h-2.4V9.9c0-0.9,0-2-1.2-2c-1.2,0-1.4,1-1.4,2v3.8H6.2V6h2.3v1h0c0.3-0.6,1.1-1.2,2.2-1.2 c2.4,0,2.8,1.6,2.8,3.6V13.6z" fill="currentColor"></path></svg></div><div class="screen-reader">LinkedIn</div></a></li><li class="margin-bottom_none"><a href="https://www.youtube.com/@arichen291" target="_blank" class="footer_icon-link w-inline-block"><div class="icon_small-1x1 text-color_inherit"><svg width="100%" height="100%" viewBox="0 0 16 16"><path d="M15.8,4.8c-0.2-1.3-0.8-2.2-2.2-2.4C11.4,2,8,2,8,2S4.6,2,2.4,2.4C1,2.6,0.3,3.5,0.2,4.8C0,6.1,0,8,0,8 s0,1.9,0.2,3.2c0.2,1.3,0.8,2.2,2.2,2.4C4.6,14,8,14,8,14s3.4,0,5.6-0.4c1.4-0.3,2-1.1,2.2-2.4C16,9.9,16,8,16,8S16,6.1,15.8,4.8z M6,11V5l5,3L6,11z" fill="currentColor"></path></svg></div><div class="screen-reader">YouTube</div></a></li>
         </ul>
       </div>
     </div>

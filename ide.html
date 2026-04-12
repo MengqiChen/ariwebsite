@@ -69,6 +69,10 @@
     letter-spacing: 0.5px;
   }
 
+  .status-tag.ongoing {
+    background-color: #fe9339;
+  }
+
   /* Force all text to be left-aligned */
   .case-study-section,
   .case-study-section *,
@@ -97,7 +101,7 @@
   .section-title {
     font-family: 'Source Serif 4', serif;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 48px;
     margin-bottom: 32px;
     text-align: left !important;
     color: #282f40;
@@ -666,7 +670,7 @@
     }
     
     .section-title {
-      font-size: 48px;
+      font-size: 36px;
     }
     
     .project-title {
@@ -743,7 +747,7 @@
   .comparison-box img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 0;
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     margin-bottom: 24px;
   }
@@ -769,15 +773,15 @@
 
   .highlight-item img {
     width: 100%;
-    border-radius: 24px !important;
-    border: 32px solid #e3e3e3 !important;
+    border-radius: 12px !important;
+    border: none !important;
     box-shadow: 0 4px 20px rgba(0,0,0,0.08) !important;
     margin-top: 24px;
   }
 
   @media (max-width: 768px) {
     .highlight-item img {
-      border: 16px solid #e3e3e3 !important;
+      border: none !important;
     }
   }
 
@@ -1069,31 +1073,31 @@
         <span class="status-tag">Delivered</span>
       </div>
       <h1 class="project-title">Architecting the Low-Code IDE</h1>
-      <p class="project-tagline">Steamline application and integration design, development, test and deployment with canvas-based low-code and no-code capabilities.</p>
+      <p class="project-tagline">Streamline application and integration design, development, testing, and deployment with canvas-based low-code and no-code capabilities.</p>
     </div>
   </section>
 
   <!-- 1. Project Brief -->
   <section class="case-study-section">
     <div class="container">
-      <h2 class="section-title">01 Project Brief</h2>
+      <h3 class="section-title">01 Project Brief</h3>
       
       <div class="brief-grid-new">
         <div class="brief-left">
           <div class="brief-item" style="margin-bottom: 48px;">
             <h3 class="heading_h3">Goal</h3>
-            <p>This project aimed to modernize the developer experience by introducing low-code and no-code capabilities, making application development as simple and intuitive as building with LEGOs 🧱.</p>
+            <p>This project aimed to modernize the developer experience by introducing low-code and no-code capabilities, making application development as simple and intuitive as building with LEGO blocks 🧱.</p>
           </div>
           <div class="brief-item">
             <h3 class="heading_h3">Users</h3>
-            <p>Today, over 500,000 developers from 1,000+ large enterprises actively use our platform to build applications. Despite its widespread adoption, the core developer experience lags behind modern application development standards, which makes our users suffer and creates risk of losing customers.</p>
+            <p>Today, over 500,000 developers from 1,000+ large enterprises actively use our platform to build applications. Despite its widespread adoption, the core developer experience lags behind modern application development standards, which creates friction for users and increases the risk of customer churn.</p>
           </div>
         </div>
         
         <div class="brief-right-stack">
           <div class="brief-item">
             <h3 class="heading_h3">Team</h3>
-            <p>UX Team - Lead by Me 😎;<br/>
+            <p>UX Team - Led by Me 😎;<br/>
                Engineering Team - 34 engineers;<br/>
                Product Management Team - 4 product managers;<br/>
                Technical Writing Team - 4 technical writers</p>
@@ -1124,7 +1128,7 @@
         <div class="comparison-box">
           <img src="images/Canvas/after_canvas.png" alt="After Screenshot" />
           <h3>After</h3>
-          <p class="paragraph_small">The new canvas-based approach allows for drag-and-drop integration design with real-time feedback and progressive disclosure.</p>
+          <p class="paragraph_small">The experience features improved readability, productivity and usability by optimizing the information architecture, comprehensive AI-powered assistance, fully flexible customization and upgraded visual language.</p>
         </div>
       </div>
     </div>
@@ -1133,7 +1137,7 @@
   <!-- 2. UX Approach -->
   <section class="case-study-section">
     <div class="container">
-      <h2 class="section-title">02 UX Approach</h2>
+      <h3 class="section-title">02 UX Approach</h3>
       <p>A user-centered design process was followed to ensure the platform met the needs of both novice and expert developers. From discovery to delivery, we iterated based on continuous feedback.</p>
       <div class="full-width-image" style="margin-top: 48px;">
         <img src="images/Canvas/UX Approach_canvas.png" alt="Design Process / UX Approach" style="width: 100%; border-radius: 12px;" />
@@ -1144,33 +1148,38 @@
   <!-- 3. Highlights -->
   <section class="case-study-section bg-grey">
     <div class="container">
-      <h2 class="section-title">03 Highlights</h2>
-
-      <div class="highlight-item">
-        <h3 class="subsection-title">Optimal Information Architecture</h3>
-        <p>Being able to manage reusable assets such as metadata, connections, properties, and other assets is a key feature of the new canvas-based editor. We designed a intuivie information architecture that allows users to create, manage and reuse assets as needed.</p>
-        <img src="images/Canvas/nav_canvas.gif" alt="Highlight 1" />
-      </div>
+      <h3 class="section-title">03 Highlights</h3>
 
       <div class="highlight-item">
         <h3 class="subsection-title">Full-Featured Canvas-based Editor</h3>
-        <p>The core of the experience is an intuitive canvas where users can visually map out their application logic. The adding, editing, moving, setting breakpoint, making comment, and converting to scope features make compelcated integration design a breeze. </p>
+        <p>The core of the experience is an intuitive canvas where users can visually map out their application logic. The adding, editing, moving, setting breakpoint, adding comments and converting to scopes make complex integration design a breeze. </p>
         <img src="images/Canvas/nav_canvas.gif" alt="Highlight 1" />     
       </div>
 
     <div class="highlight-item">
-      <h3 class="subsection-title">Customizable Canvas Interface</h3>
-      <p>To reduce errors, we implemented a real-time validation engine that provides instant feedback as users build, similar to spell-check but for integration logic.</p>
+      <h3 class="subsection-title">Customizable Canvas</h3>
+      <p>Our custom canvas interface allows users to configure and customize the canvas to their needs, reducing errors and improving productivity.</p>
       <img src="images/Canvas/settings_canvas.gif" alt="Highlight 2" />
     </div>
 
-  
+    <div class="highlight-item">
+      <h3 class="subsection-title">Readable User Interface</h3>
+      <p>To make the user interface more readable and intuitive, I designed a “readable mode” to the UI. In this mode, the entire flow is displayed in a linear manner, making the logic of the integration more visible and easier to understand. It also includes an AI-powered, context-based “Generate Description” feature to help users better understand the flow.</p>
+      <img src="images/Canvas/readable_ui.gif" alt="Highlight 2" />
+    </div>
+
+    <div class="highlight-item">
+      <h3 class="subsection-title">Optimal Information Architecture</h3>
+      <p>Being able to manage reusable assets such as metadata, connections, properties, and other assets is a key feature of the new canvas-based editor. I designed an intuitive information architecture that allows users to create, manage, and reuse assets as needed.</p>
+      <img src="images/Canvas/higharchy.png" alt="Highlight 1" />
+    </div>
+
   </section>
 
   <!-- 4. Closing Notes -->
   <section class="case-study-section">
     <div class="container">
-      <h2 class="section-title">04 Closing Notes</h2>
+      <h3 class="section-title">04 Closing Notes</h3>
       
       <div class="closing-grid">
         <!-- Impact Section -->
@@ -1183,7 +1192,7 @@
                 <span class="metric-arrow">▲</span>
               </div>
               <span class="metric-label-green">Increase in productivity</span>
-              <p class="metric-description">We have seen a massive lift in the efficiency of integration design made within the 3 months of launch.</p>
+              <p class="metric-description">We have seen a massive lift in the efficiency of integration design made within the first 3 months after launch.</p>
             </div>
             
             <div class="metric-item-new">
@@ -1212,7 +1221,7 @@
           <div class="takeaways-list">
             <div class="takeaway-row">
               <span class="takeaway-number">01</span>
-              <p class="takeaway-text">Successfully transformed a complex, standalone developer experience product into an Visual Studio Code extension without compromising on usability or performance.</p>
+              <p class="takeaway-text">Successfully transformed a complex, standalone developer experience product into a Visual Studio Code extension without compromising on usability or performance.</p>
             </div>
             
             <div class="takeaway-row">
@@ -1249,7 +1258,7 @@
       <div class="footer_bottom-3-col">
         <a href="#" class="logo w-inline-block"></a>
         <ul role="list" aria-label="Social media links" class="footer_icon-group w-list-unstyled">
-          <!-- Social links here -->
+          <li class="margin-bottom_none"><a href="https://www.facebook.com/cmq92811" target="_blank" class="footer_icon-link w-inline-block"><div class="icon_small-1x1 text-color_inherit"><svg width="100%" height="100%" viewBox="0 0 16 16"><path d="M16,8.048a8,8,0,1,0-9.25,7.9V10.36H4.719V8.048H6.75V6.285A2.822,2.822,0,0,1,9.771,3.173a12.2,12.2,0,0,1,1.791.156V5.3H10.554a1.155,1.155,0,0,0-1.3,1.25v1.5h2.219l-.355,2.312H9.25v5.591A8,8,0,0,0,16,8.048Z" fill="currentColor"></path></svg></div><div class="screen-reader">Facebook</div></a></li><li class="margin-bottom_none"><a href="https://www.instagram.com/airgnne?igsh=NTc4MTIwNjQ2YQ%3D%3D&amp;utm_source=qr" target="_blank" class="footer_icon-link w-inline-block"><div class="icon_small-1x1 text-color_inherit"><svg width="100%" height="100%" viewBox="0 0 16 16"><path d="M8,1.441c2.136,0,2.389.009,3.233.047a4.419,4.419,0,0,1,1.485.276,2.472,2.472,0,0,1,.92.6,2.472,2.472,0,0,1,.6.92,4.419,4.419,0,0,1,.276,1.485c.038.844.047,1.1.047,3.233s-.009,2.389-.047,3.233a4.419,4.419,0,0,1-.276,1.485,2.644,2.644,0,0,1-1.518,1.518,4.419,4.419,0,0,1-1.485.276c-.844.038-1.1.047-3.233.047s-2.389-.009-3.233-.047a4.419,4.419,0,0,1-1.485-.276,2.472,2.472,0,0,1-.92-.6,2.472,2.472,0,0,1-.6-.92,4.419,4.419,0,0,1-.276-1.485c-.038-.844-.047-1.1-.047-3.233s.009-2.389.047-3.233a4.419,4.419,0,0,1,.276-1.485,2.472,2.472,0,0,1,.6-.92,2.472,2.472,0,0,1,.92-.6,4.419,4.419,0,0,1,1.485-.276c.844-.038,1.1-.047,3.233-.047M8,0C5.827,0,5.555.009,4.7.048A5.868,5.868,0,0,0,2.76.42a3.908,3.908,0,0,0-1.417.923A3.908,3.908,0,0,0,.42,2.76A5.868,5.868,0,0,0,.048,4.7C.009,5.555,0,5.827,0,8s.009,2.445.048,3.3A5.868,5.868,0,0,0,.42,13.24a3.908,3.908,0,0,0,.923,1.417,3.908,3.908,0,0,0,1.417.923,5.868,5.868,0,0,0,1.942.372C5.555,15.991,5.827,16,8,16s2.445-.009,3.3-.048a5.868,5.868,0,0,0,1.942-.372,4.094,4.094,0,0,0,2.34-2.34,5.868,5.868,0,0,0,.372-1.942c.039-.853.048-1.125.048-3.3s-.009-2.445-.048-3.3A5.868,5.868,0,0,0,15.58,2.76a3.908,3.908,0,0,0-.923-1.417A3.908,3.908,0,0,0,13.24.42,5.868,5.868,0,0,0,11.3.048C10.445.009,10.173,0,8,0Z" fill="currentColor"></path><path d="M8,3.892A4.108,4.108,0,1,0,12.108,8,4.108,4.108,0,0,0,8,3.892Zm0,6.775A2.667,2.667,0,1,1,10.667,8,2.667,2.667,0,0,1,8,10.667Z" fill="currentColor"></path><circle cx="12.27" cy="3.73" r="0.96" fill="currentColor"></circle></svg></div><div class="screen-reader">Instagram<br/></div></a></li><li class="margin-bottom_none"><a href="https://www.linkedin.com/in/mengqi-chen-b68051a3/" target="_blank" class="footer_icon-link w-inline-block"><div class="icon_small-1x1 text-color_inherit"><svg width="100%" height="100%" viewBox="0 0 16 16"><path d="M15.3,0H0.7C0.3,0,0,0.3,0,0.7v14.7C0,15.7,0.3,16,0.7,16h14.7c0.4,0,0.7-0.3,0.7-0.7V0.7 C16,0.3,15.7,0,15.3,0z M4.7,13.6H2.4V6h2.4V13.6z M3.6,5C2.8,5,2.2,4.3,2.2,3.6c0-0.8,0.6-1.4,1.4-1.4c0.8,0,1.4,0.6,1.4,1.4 C4.9,4.3,4.3,5,3.6,5z M13.6,13.6h-2.4V9.9c0-0.9,0-2-1.2-2c-1.2,0-1.4,1-1.4,2v3.8H6.2V6h2.3v1h0c0.3-0.6,1.1-1.2,2.2-1.2 c2.4,0,2.8,1.6,2.8,3.6V13.6z" fill="currentColor"></path></svg></div><div class="screen-reader">LinkedIn</div></a></li><li class="margin-bottom_none"><a href="https://www.youtube.com/@arichen291" target="_blank" class="footer_icon-link w-inline-block"><div class="icon_small-1x1 text-color_inherit"><svg width="100%" height="100%" viewBox="0 0 16 16"><path d="M15.8,4.8c-0.2-1.3-0.8-2.2-2.2-2.4C11.4,2,8,2,8,2S4.6,2,2.4,2.4C1,2.6,0.3,3.5,0.2,4.8C0,6.1,0,8,0,8 s0,1.9,0.2,3.2c0.2,1.3,0.8,2.2,2.2,2.4C4.6,14,8,14,8,14s3.4,0,5.6-0.4c1.4-0.3,2-1.1,2.2-2.4C16,9.9,16,8,16,8S16,6.1,15.8,4.8z M6,11V5l5,3L6,11z" fill="currentColor"></path></svg></div><div class="screen-reader">YouTube</div></a></li>
         </ul>
       </div>
     </div>
