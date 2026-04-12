@@ -1291,7 +1291,7 @@
         overlay.style.display = 'none';
         protectedContent.classList.add('unlocked');
         // Store in session storage so user doesn't need to re-enter during session
-        sessionStorage.setItem('portfolioAccess', 'granted');
+        sessionStorage.setItem('ideAccess', 'granted');
       } else {
         errorDiv.style.display = 'block';
         document.getElementById('passwordInput').value = '';
@@ -1301,7 +1301,7 @@
     
     // Check if user already entered password in this session
     window.addEventListener('load', function() {
-      if (sessionStorage.getItem('portfolioAccess') === 'granted') {
+      if (sessionStorage.getItem('ideAccess') === 'granted') {
         document.getElementById('passwordOverlay').style.display = 'none';
         document.getElementById('protectedContent').classList.add('unlocked');
       }
