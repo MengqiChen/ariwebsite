@@ -1225,8 +1225,9 @@
         <h3 class="subsection-title">Automated Quality Gates (The "Skills")</h3>
         <p>I established two critical agentic workflows that integrate the rules and skills to maintain repository health and scale design capacity:</p>
         <ul>
-          <li>pr-readiness.md: A pre-submission skill where the AI scans for UI changes, validates them against the design specs, and flags violations before human review.</li>
-          <li>pr-review.md: A secondary compliance check by reviewers that suggests optimizations based on core design principles and pattern consistency.</li>
+          <li>Component Registry: A single source of truth for what UI components exist in design system and where to find them.</li>
+          <li>ui-guardrails.md: A set of pre-submission skills where the AI scans for UI changes, validates them against the design guides, and flags violations before human review.</li>
+          <li>pr-readiness.md: A pre-submission skill that ensures code is "production-ready" before a pull request (PR) is created.</li>
         </ul>
         <p>It resulted in <b>0% hard-coded values</b> in the master repo since implementation; <b>40% reduction</b> in manual UI review cycles.</p>
         <img src="images/Platform/Automated Quality Gates.png" alt="Highlight 2" />
