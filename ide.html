@@ -2,7 +2,7 @@
 <html data-wf-domain="arichen.me" data-wf-site="686c18a3a6ebe2f90d2bc5fa">
 <head>
 <meta charset="utf-8"/>
-<title>Architecting the Low-Code IDE - Mengqi Chen</title>
+<title>Anypoint Code Builder - Mengqi Chen</title>
 <meta content="Project description here" name="description"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <link href="css/mengqi-chen.webflow.shared.766d4cb07.css" rel="stylesheet" type="text/css"/>
@@ -1062,192 +1062,15 @@
   <!-- Protected Content Wrapper -->
   <div id="protectedContent" class="protected-content">
   
-  <!-- 1. Hero Section -->
-  <section class="case-study-section case-study-hero">
-    <div class="hero-image-container">
-      <img src="images/Canvas/hero_canvas.png" alt="Project Hero Image" />
-    </div>
-    <div class="hero-content">
-      <div class="project-company" style="font-family: 'aktiv-grotesk', sans-serif; font-size: 24px; margin-bottom: 8px; color: #282f40; text-align: left !important;">
-        <span>@Salesforce</span>
-        <span class="status-tag">Delivered</span>
-      </div>
-      <h1 class="project-title">Architecting the Low-Code IDE</h1>
-      <p class="project-tagline">Streamline application and integration design, development, testing, and deployment with canvas-based low-code and no-code capabilities.</p>
-    </div>
-  </section>
+  <section class="case-study-section case-study-hero"><div class="container"><h1>Anypoint Code Builder: a visual IDE for complex integration work</h1><p>Case 1 — The IDE&#x27;s initial release: API spec projects and integration projects.</p><p>Senior Product Designer, Salesforce (MuleSoft), Bay Area. Sole designer on 0–1 products, in 30–40-person cross-functional teams.</p></div></section>
+<section class="case-study-section"><div class="container"><h3 class="section-title">Context</h3><p>At the IDE&#x27;s initial release, developers built two kinds of projects in it: API spec projects and integration projects. They had a powerful set of capabilities, but the work of setting it up was expensive. Configuration was manual, the flow was hard to see end to end, and coherence across steps depended on the developer holding the whole system in their head.</p></div></section>
+<section class="case-study-section"><div class="container"><h3 class="section-title">Problem</h3><p>How do you make a complex, multi-step workflow visible and editable, so a developer can understand it, change it, and trust it — without flattening the complexity that makes it useful?</p></div></section>
+<section class="case-study-section"><div class="container"><h3 class="section-title">Role and scope</h3><p>Sole product designer, 0–1, in a 30–40-person cross-functional team. I owned the end-to-end design strategy for the visual IDE, including the AI chat experience inside it.</p></div></section>
+<section class="case-study-section"><div class="container"><h3 class="section-title">Approach</h3><ul><li>Start from the workflow, not the feature list. The canvas had to show the whole flow at once: what happens, in what order, and where data moves between steps. If a step could not be seen, it could not be reasoned about, so visibility was treated as a requirement, not a polish step.</li><li>Design the AI chat experience as part of the canvas, not as a separate assistant panel. Vibes, the in-product AI agent, had to act on the same workflow the developer was looking at, so a suggestion could be inspected, edited, and undone in place.</li><li>Build patterns for AI-powered data transformation and flow generation, aimed at reducing manual configuration and accelerating workflow creation. The pattern question was always the same: what should the system generate, what should it suggest, and what must the developer still decide?</li><li>Keep behavior predictable within a single workflow. The patterns for data transformation and flow generation were meant to make steps inside one workflow behave consistently, so a developer could reason about a step without holding the whole system in their head. This is scoped to coherence inside a workflow, not to coherence across product verticals.</li></ul></div></section>
+<section class="case-study-section"><div class="container"><h3 class="section-title">Outcome</h3><ul><li>FY27 overview totals (full year 2026; dashboard data Oct 2026): ~23K active users across ~9.97K active organizations.</li><li>Vibes, the in-product AI agent: ~9.52K active users across ~4.08K organizations.</li><li>The visual IDE design strategy was showcased at Dreamforce by CEO Marc Benioff as a primary driver for developer productivity.</li></ul></div></section>
+<section class="case-study-section"><div class="container"><h3 class="section-title">Reflection</h3><p>The hardest part was not adding AI features. It was deciding where AI should remove work and where the developer still needed to see and control the workflow. Keeping that boundary visible is what let the IDE scale from a demo into a tool teams return to.</p></div></section>
+<section class="case-study-section"><div class="container"><h3 class="section-title">Visuals — to be added, redrawn only</h3><p>No internal screenshots are used here. Planned redrawn visuals: before/after manual vs. visual flow; IDE canvas with AI chat entry point, anonymized sample content; setup-to-run diagram with AI assistance points; metric panel with the FY27 overview figures above, labelled FY27 = full year 2026.</p></div></section>
 
-  <!-- 1. Project Brief -->
-  <section class="case-study-section">
-    <div class="container">
-      <h3 class="section-title">01 Project Brief</h3>
-      
-      <div class="brief-grid-new">
-        <div class="brief-left">
-          <div class="brief-item" style="margin-bottom: 48px;">
-            <h3 class="heading_h3">Goal</h3>
-            <p>This project aimed to modernize the developer experience by introducing low-code and no-code capabilities, making application development as simple and intuitive as building with LEGO blocks 🧱.</p>
-          </div>
-          <div class="brief-item">
-            <h3 class="heading_h3">Users</h3>
-            <p>Today, over 500,000 developers from 1,000+ large enterprises actively use our platform to build applications. Despite its widespread adoption, the core developer experience lags behind modern application development standards, which creates friction for users and increases the risk of customer churn.</p>
-          </div>
-        </div>
-        
-        <div class="brief-right-stack">
-          <div class="brief-item">
-            <h3 class="heading_h3">Team</h3>
-            <p>UX Team - Led by Me 😎;<br/>
-               Engineering Team - 34 engineers;<br/>
-               Product Management Team - 4 product managers;<br/>
-               Technical Writing Team - 4 technical writers</p>
-          </div>
-          
-          <div class="brief-item">
-            <h3 class="heading_h3">Skills</h3>
-            <p>Product Strategy<br/>
-               User Research<br/>
-               User Experience Design<br/>
-               Design System Development<br/>
-               Visual Design</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Before / After Section -->
-  <section class="case-study-section bg-grey">
-    <div class="container">
-      <div class="before-after-grid">
-        <div class="comparison-box">
-          <img src="images/Canvas/before_canvas.png" alt="Before Screenshot" />
-          <h3>Before</h3>
-          <p class="paragraph_small">The legacy experience required heavy coding and complex manual configurations, leading to high friction and steep learning curves.</p>
-        </div>
-        <div class="comparison-box">
-          <img src="images/Canvas/after_canvas.png" alt="After Screenshot" />
-          <h3>After</h3>
-          <p class="paragraph_small">The experience features improved readability, productivity and usability by optimizing the information architecture, comprehensive AI-powered assistance, fully flexible customization and upgraded visual language.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 2. UX Approach -->
-  <section class="case-study-section">
-    <div class="container">
-      <h3 class="section-title">02 UX Approach</h3>
-      <p>A user-centered design process was followed to ensure the platform met the needs of both novice and expert developers. From discovery to delivery, we iterated based on continuous feedback.</p>
-      <div class="full-width-image" style="margin-top: 48px;">
-        <img src="images/Canvas/UX Approach_canvas.png" alt="Design Process / UX Approach" style="width: 100%; border-radius: 12px;" />
-      </div>
-    </div>
-  </section>
-
-  <!-- 3. Highlights -->
-  <section class="case-study-section bg-grey">
-    <div class="container">
-      <h3 class="section-title">03 Highlights</h3>
-
-      <div class="highlight-item">
-        <h3 class="subsection-title">Full-Featured Canvas-based Editor</h3>
-        <p>The core of the experience is an intuitive canvas where users can visually map out their application logic. The adding, editing, moving, setting breakpoint, adding comments and converting to scopes make complex integration design a breeze. </p>
-        <img src="images/Canvas/nav_canvas.gif" alt="Highlight 1" />     
-      </div>
-
-    <div class="highlight-item">
-      <h3 class="subsection-title">Customizable Canvas</h3>
-      <p>Our custom canvas interface allows users to configure and customize the canvas to their needs, reducing errors and improving productivity.</p>
-      <img src="images/Canvas/settings_canvas.gif" alt="Highlight 2" />
-    </div>
-
-    <div class="highlight-item">
-      <h3 class="subsection-title">Readable User Interface</h3>
-      <p>To make the user interface more readable and intuitive, I designed a “readable mode” to the UI. In this mode, the entire flow is displayed in a linear manner, making the logic of the integration more visible and easier to understand. It also includes an AI-powered, context-based “Generate Description” feature to help users better understand the flow.</p>
-      <img src="images/Canvas/readable_ui.gif" alt="Highlight 2" />
-    </div>
-
-    <div class="highlight-item">
-      <h3 class="subsection-title">Optimal Information Architecture</h3>
-      <p>Being able to manage reusable assets such as metadata, connections, properties, and other assets is a key feature of the new canvas-based editor. I designed an intuitive information architecture that allows users to create, manage, and reuse assets as needed.</p>
-      <img src="images/Canvas/higharchy.png" alt="Highlight 1" />
-    </div>
-
-  </section>
-
-  <!-- 4. Closing Notes -->
-  <section class="case-study-section">
-    <div class="container">
-      <h3 class="section-title">04 Closing Notes</h3>
-      
-      <div class="closing-grid">
-        <!-- Impact Section -->
-        <div class="closing-item">
-          <h3 class="subsection-title">Impact</h3>
-          <div class="metrics-grid-3col">
-            <div class="metric-item-new">
-              <div class="metric-header">
-                <span class="metric-number">30%</span>
-                <span class="metric-arrow">▲</span>
-              </div>
-              <span class="metric-label-green">Increase in productivity</span>
-              <p class="metric-description">We have seen a massive lift in the efficiency of integration design made within the first 3 months after launch.</p>
-            </div>
-            
-            <div class="metric-item-new">
-              <div class="metric-header">
-                <span class="metric-number">40%</span>
-                <span class="metric-arrow">▲</span>
-              </div>
-              <span class="metric-label-green">Faster time-to-market</span>
-              <p class="metric-description">Significant reduction in manual coding and configuration errors led to much faster project completion.</p>
-            </div>
-            
-            <div class="metric-item-new">
-              <div class="metric-header">
-                <span class="metric-number">25%</span>
-                <span class="metric-arrow">▲</span>
-              </div>
-              <span class="metric-label-green">User Satisfaction</span>
-              <p class="metric-description">NPS scores among developers increased by a quarter after adopting the new canvas-based editor.</p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Takeaways Section -->
-        <div class="closing-item">
-          <h3 class="subsection-title" style="margin-top: 0;">Takeaways</h3>
-          <div class="takeaways-list">
-            <div class="takeaway-row">
-              <span class="takeaway-number">01</span>
-              <p class="takeaway-text">Successfully transformed a complex, standalone developer experience product into a Visual Studio Code extension without compromising on usability or performance.</p>
-            </div>
-            
-            <div class="takeaway-row">
-              <span class="takeaway-number">02</span>
-              <p class="takeaway-text">Leveraged close collaboration across design, product, and engineering to translate technical complexity into a clear, no-code user experience.</p>
-            </div>
-            
-            <div class="takeaway-row">
-              <span class="takeaway-number">03</span>
-              <p class="takeaway-text">Learned to prioritize ruthlessly in high-pressure environments, focusing on what delivered the most value within tight timelines.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Back Navigation -->
-  <div class="back-navigation">
-    <a href="index.html#work" class="back-link">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <path d="M14 8H2M2 8L8 2M2 8L8 14" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/>
-      </svg>
-      Back to Work
-    </a>
-  </div>
 
   </div> <!-- End Protected Content -->
 

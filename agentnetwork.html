@@ -2,7 +2,7 @@
 <html data-wf-domain="arichen.me" data-wf-site="686c18a3a6ebe2f90d2bc5fa">
 <head>
 <meta charset="utf-8"/>
-<title>Agent Network - Mengqi Chen</title>
+<title>Agent Fabric Authoring - Mengqi Chen</title>
 <meta content="Project description here" name="description"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <link href="css/mengqi-chen.webflow.shared.766d4cb07.css" rel="stylesheet" type="text/css"/>
@@ -1062,220 +1062,15 @@
   <!-- Protected Content Wrapper -->
   <div id="protectedContent" class="protected-content">
   
-  <!-- 1. Hero Section -->
-  <section class="case-study-section case-study-hero">
-    <div class="hero-image-container">
-      <img src="images/Agentnetwork/hero_agentnetwork.png" alt="Project Hero Image" />
-    </div>
-    <div class="hero-content">
-      <div class="project-company" style="font-family: 'aktiv-grotesk', sans-serif; font-size: 24px; margin-bottom: 8px; color: #282f40; text-align: left !important;">
-        <span>@Salesforce</span>
-        <span class="status-tag ongoing">ON-GOING</span>
-      </div>
-      <h1 class="project-title">Agent Network</h1>
-      <p class="project-tagline">A specialized IDE experience within Anypoint Code Builder that enables developers to visually architect, govern, and deploy complex multi-agent networks using a canvas-based, deterministic orchestration engine.</p>
-    </div>
-  </section>
+  <section class="case-study-section case-study-hero"><div class="container"><h1>Agent Fabric authoring: how developers build, orchestrate, and govern multi-agent systems</h1><p>Case 2 — The IDE beginning to support building agent networks.</p><p>Senior Product Designer, Salesforce (MuleSoft), Bay Area. Sole designer on 0–1 products, in 30–40-person cross-functional teams.</p></div></section>
+<section class="case-study-section"><div class="container"><h3 class="section-title">Context</h3><p>This was not a higher level of the same workflow. It was the IDE beginning to support a new thing to build: after the initial release supported API spec projects and integration projects, the IDE began to support building agent networks. Agent Fabric is a network of agents that can handle problems: a system where multiple agents, not a single workflow, have to be built, orchestrated, and governed. A developer could no longer just ask “does this step work?” — they had to ask “what is each agent, what can it do, and who is it acting for?”</p></div></section>
+<section class="case-study-section"><div class="container"><h3 class="section-title">Problem</h3><p>Authoring a multi-agent system is a system-design problem. If identity, orchestration, and governance are only visible after the system runs, the developer discovers problems too late, when they are already expensive to fix.</p></div></section>
+<section class="case-study-section"><div class="container"><h3 class="section-title">Role and scope</h3><p>Sole product designer, 0–1, AI chat experience. Same 30–40-person team scale as Case 1.</p></div></section>
+<section class="case-study-section"><div class="container"><h3 class="section-title">Approach</h3><ul><li>Make structure visible at authoring time. The authoring experience had to show, while the developer was building, what each agent is, how agents connect, and what governance applies to each one.</li><li>Separate design from adoption in the telling, but keep them in the same case: the authoring design first, the adoption numbers as evidence that the design held up in real use.</li><li>Keep broker and production language at stage level. The point is that authoring led somewhere real — POCs progressing, production reached — not which specific customer reached it.</li></ul></div></section>
+<section class="case-study-section"><div class="container"><h3 class="section-title">Outcome</h3><p>Community adoption, Feb–Sep 2026, aggregate, no individual data:</p><ul><li>157 total users since launch; 2,258 logins Feb–Sep 2026; 8 months active continuous.</li><li>Peak month August 2026: 719 logins, 90 users.</li><li>September is partial (as of the 18th): 217 logins, 75 unique users.</li><li>Broker v2, anonymized by count and stage only: multiple customer POCs progressing toward production, including 2 customers in production as of September 2026. No customer names.</li></ul></div></section>
+<section class="case-study-section"><div class="container"><h3 class="section-title">Reflection</h3><p>Adoption did not come from adding more controls. It came from making the system&#x27;s structure — what each agent is, what it can do, and who it acts for — visible at authoring time, so governance was part of building, not a check added afterwards.</p></div></section>
+<section class="case-study-section"><div class="container"><h3 class="section-title">Visuals — to be added, redrawn only</h3><p>No internal screenshots are used here. Planned redrawn visuals: authoring canvas with agent, broker, and governance elements, anonymized sample content; adoption curve Feb–Sep 2026, September marked partial; authoring-to-production diagram, stages only, no customer names.</p></div></section>
 
-  <!-- 1. Project Brief -->
-  <section class="case-study-section">
-    <div class="container">
-      <h3 class="section-title">01 Project Brief</h3>
-      
-      <div class="brief-grid-new">
-        <div class="brief-left">
-          <div class="brief-item" style="margin-bottom: 48px;">
-            <h3 class="heading_h3">Goal</h3>
-            <ul>
-              <li><b>AI & Integration Developers:</b> Technical users responsible for building, testing, and deploying semi-autonomous agent networks (Agent Fabric) within an enterprise ecosystem.</li>
-              <li><b>AI Agents (Claude/Cursor):</b> Functioning as primary contributors that require strict logic and rule-based guardrails to generate high-quality UI.</li>
-              <li><b>Future Contributors:</b> Developers who need a scalable, tokenized framework that adapts to new components automatically.</li>
-            </ul>          
-          </div>
-          <div class="brief-item">
-            <h3 class="heading_h3">Users</h3>
-            <ul>
-              <li><b>AI & Integration Developers:</b> Technical users responsible for building, testing, and deploying semi-autonomous agent networks (Agent Fabric) within an enterprise ecosystem.</li>
-              <li><b>System Architects:</b> Personas focused on the high-level orchestration, discovery, and governance of reusable agentic assets and MCP (Model Context Protocol) tools.</li>
-              <li><b>FAI Agents (The "Vibes" User)</b> The IDE itself acts as a user, utilizing natural language instructions to translate legacy V1 YAML into V2 Agent Script-based graphs.</li>
-            </ul>
-          </div>
-        </div>
-        
-        <div class="brief-right-stack">
-          <div class="brief-item">
-            <h3 class="heading_h3">Team</h3>
-            <ul>
-              <li><b>UX Team:</b> 2 lead designers including me 😎;</li>
-              <li><b>Engineering Team:</b> 30 engineers;</li>
-              <li><b>Product Management Team:</b> 3 product managers;</li>
-              <li><b>Technical Writing Team:</b> 2 technical writers;</li>
-            </ul>
-          </div> 
-          <div class="brief-item">
-            <h3 class="heading_h3">Skills</h3>
-            <ul>
-              <li>User Research</li>
-              <li>User Experience Design</li>
-              <li>DSL & Dialect Design</li>
-              <li>Experience Infrastructure</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Before / After Section -->
-  <section class="case-study-section bg-grey">
-    <div class="container">
-      <div class="before-after-grid">
-        <div class="comparison-box">
-          <img src="images/Agentnetwork/before_agentnetwork.png" alt="Before Screenshot" />
-          <h3>Before</h3>
-          <p class="paragraph_small">A read-only YAML broker that provided a static view of simple "agent loops." Developers were forced to jump between text files and a non-interactive diagram, with no ability to edit logic directly on the canvas.</p>
-        </div>
-        <div class="comparison-box">
-          <img src="images/Agentnetwork/after_agentnetwork.png" alt="After Screenshot" />
-          <h3>After</h3>
-          <p class="paragraph_small">A fully configurable, bidirectional orchestration engine. Every node and edge on the canvas is interactive; changes made visually are programmatically written to the underlying Agent Script in real-time, enabling true "design-as-code."</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 2. UX Approach -->
-  <section class="case-study-section">
-    <div class="container">
-      <h3 class="section-title">02 UX Approach</h3>
-      <div class="full-width-image" style="margin-top: 48px;">
-        <img src="images/Agentnetwork/UX Approach_agentnetwork.png" alt="Design Process / UX Approach" style="width: 100%; border-radius: 12px;" />
-      </div>
-
-      <h3 class="subsection-title">1. Research & Systems Deep-Dive</h3>
-      <ul>
-        <li><strong>Technical Audit:</strong> Deep-dived into the YAML dialect and the AgentScript schema to understand the "source of truth."</li>
-        <li><strong>Co-Creation Sessions:</strong> Partnered with Solution Engineers to identify real-world bottlenecks in multi-agent enterprise deployments.</li>
-        <li><strong>Pattern Analysis:</strong> Analyzed exchange.json and dependency patterns to define how AI assets should be discovered and reused.</li>
-      </ul>
-
-      <h3 class="subsection-title">2. Defining the Logic Model (The Knowledge Map)</h3>
-      <ul>
-        <li><strong>Mapping Intent:</strong> Translated developer goals into a graph-based taxonomy (Nodes, Edges, and Hand-offs).</li>
-        <li><strong>Structural Definition:</strong> Defined the "Registry vs. Context" model to separate reusable assets from environment-specific asset & configurations.</li>
-        <li><strong>Orchestration Logic:</strong> Created a behavioral map that enforces "Guided Determinism" — ensuring the canvas logic matches the state-machine execution of the engine.</li>
-      </ul>
-
-      <h3 class="subsection-title">3. Iteration & Delivery</h3>
-      <ul>
-        <li><strong>Bidirectional Prototyping:</strong> Developed a two-way sync between the visual canvas and the AgentScript code, ensuring zero "logic drift."</li>
-        <li><strong>Clear Information Architecture:</strong> Designed a clear information architecture for the end to end user experience, keep the user guided and focused on the task at hand: building the broker graph, registering an asset, create a connection, setting up policy-binding or configuring a tool.</li>
-        <li><strong>Final Spec:</strong> Delivered a high-fidelity IDE experience ready for GA launch, featuring a fully configurable graph canvas,component palette and property panels.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- 3. Highlights -->
-  <section class="case-study-section bg-grey">
-    <div class="container">
-      <h3 class="section-title">03 Highlights</h3>
-      <div class="highlight-item">
-        <h3 class="subsection-title">The Unified Canvas-to-Code Sync</h3>
-        <p><b>The Problem:</b> Developers struggled to maintain a mental map of fragmented multi-file projects (AgentNetwork YAML for registry, Agent Script for logic, and Exchange.json for dependency management).</p>
-        <p><b>The Solution:</b> I designed a bidirectional synchronization mechanism where visual configurations—such as MCP tool bindings or policy attachments—automatically generate the corresponding imports and logic across the underlying file system in real-time.</p>
-        <img src="images/Agentnetwork/asset_sync.gif" alt="Highlight 1" />
-      </div>
-
-      <div class="highlight-item">
-        <h3 class="subsection-title">Multi-Graph Unified View</h3>
-        <p><b>The Problem:</b> In complex enterprise scenarios, brokers and their execution logic are scattered across separate files. Developers were forced to "mentally compile" how these independent agent graphs(brokers) interacted, leading to high cognitive load and configuration errors.</p>
-        <p><b>The Solution:</b> I designed a unified workspace that surfaces the entire multi-agent network in a single view. Users can navigate the high-level network topology and dive into the specific logic of individual agent graphs without losing context, turning fragmented files into a cohesive, observable system.</p>
-        <img src="images/Agentnetwork/multi-graph_view.gif" alt="Highlight 2: Multi-Graph Orchestration" />
-      </div>
-
-      <div class="highlight-item">
-        <h3 class="subsection-title">Adaptive Property Panels</h3>
-        <p><b>The Problem:</b> Diverse node types (Brokers, LLMs, Connections, and Policies) require vastly different configuration schemas, creating high cognitive load and UI clutter.</p>
-        <p><b>The Solution:</b> I designed a dynamic properties architecture where configuration schemas adapt based on the selected node type. This "just-in-time" interface ensures that complex parameters are only surfaced when contextually relevant, reducing visual noise.</p>
-        <img src="images/Agentnetwork/adaptive_property_panels.png" alt="Highlight 3" />
-      </div>
-    </div>
-  </section>
-
-  <!-- 4. Closing Notes -->
-   <!-- <section class="case-study-section">
-    <div class="container">
-      <h3 class="section-title">04 Closing Notes</h3>
-      
-      <div class="closing-grid"> 
-           Impact Section 
-        <div class="closing-item">
-          <h3 class="subsection-title">Impact</h3>
-          <div class="metrics-grid-3col">
-            <div class="metric-item-new">
-              <div class="metric-header">
-                <span class="metric-number">30%</span>
-                <span class="metric-arrow">▼</span>
-              </div>
-              <span class="metric-label-green">Time to First Conductor (TTFC)</span>
-              <p class="metric-description">Significant reduction in manual coding and configuration errors led to much faster project completion.</p>
-            </div>
-            
-            <div class="metric-item-new">
-              <div class="metric-header">
-                <span class="metric-number">40%</span>
-                <span class="metric-arrow">▼</span>
-              </div>
-              <span class="metric-label-green">YAML Configuration Complexity </span>
-              <p class="metric-description">Feedback from users indicate that the new agent network experience is designed to be more intuitive and user-friendly, with a focus on reducing the complexity of YAML configurations.</p>
-            </div>
-            
-            <div class="metric-item-new">
-              <div class="metric-header">
-                <span class="metric-number">25%</span>
-                <span class="metric-arrow">▼</span>
-              </div>
-              <span class="metric-label-green">Error Rate of Workflows</span>
-              <p class="metric-description">Percentage of workflows that encounter errors during execution has been reduced significantly.</p>
-            </div>
-          </div>
-        </div> -->
-        <section class="case-study-section">
-          <div class="container">   
-            <h3 class="section-title">04 Closing Notes</h3>          
-        <!-- Takeaways Section -->
-        <div class="closing-item">
-          <h3 class="subsection-title" style="margin-top: 0;">Takeaways</h3>
-          <div class="takeaways-list">
-            <div class="takeaway-row">
-              <span class="takeaway-number">01</span>
-              <p class="takeaway-text"><b>The Power of Abstraction:</b> Success in agentic design isn't about showing the code; it’s about creating the right visual abstractions (Nodes/Edges) that accurately represent the underlying state machine without overwhelming the developer.</p>
-            </div>
-            
-            <div class="takeaway-row">
-              <span class="takeaway-number">02</span>
-              <p class="takeaway-text"><b>Guided Determinism is a Requirement:</b> For enterprise AI to be trusted, the UI must enforce predictability. Mandatory triggers and validated schemas aren't "limitations"—they are the features that make the system production-ready.</p>
-            </div>
-            
-            <div class="takeaway-row">
-              <span class="takeaway-number">03</span>
-              <p class="takeaway-text"><b>The IDE as a Living Bridge:</b> By designing for bidirectional synchronization, I learned that the interface must act as a real-time translator between a developer's intent and the rigid requirements of an AI dialect.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Back Navigation -->
-  <div class="back-navigation">
-    <a href="index.html#work" class="back-link">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <path d="M14 8H2M2 8L8 2M2 8L8 14" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/>
-      </svg>
-      Back to Work
-    </a>
-  </div>
 
   </div> <!-- End Protected Content -->
 
