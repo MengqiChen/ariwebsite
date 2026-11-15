@@ -200,6 +200,26 @@
     margin: 36px 0 8px;
     max-width: 900px;
   }
+
+  /* Trim pass 2026-11-15: problem statement + ordered lists */
+  .problem-lede {
+    font-family: 'Source Serif 4', serif;
+    font-size: 28px;
+    line-height: 1.4;
+    color: #282f40;
+  }
+  .case-study-section ol {
+    font-family: 'aktiv-grotesk', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    padding-left: 24px;
+    color: #282f40;
+  }
+  .case-study-section ol li {
+    margin-bottom: 12px;
+    color: #282f40;
+  }
   
   /* Catch-all: Ensure all text in case study sections has sufficient contrast */
   .case-study-section * {
@@ -1100,12 +1120,11 @@
   <div id="protectedContent" class="protected-content">
   
   <section class="case-study-section case-study-hero"><div class="container"><h1>Agent Fabric authoring: how developers build, orchestrate, and govern multi-agent systems</h1><p>Case 2 — The IDE beginning to support building agent networks.</p><p>Senior Product Designer, Salesforce (MuleSoft), Bay Area. Sole designer on 0–1 products, in 30–40-person cross-functional teams.</p><div class="results-strip"><div class="metric"><div class="metric-number">157</div><div class="metric-label">total users since launch</div></div><div class="metric"><div class="metric-number">2,258</div><div class="metric-label">logins, Feb–Sep 2026</div></div><div class="metric"><div class="metric-number">2</div><div class="metric-label">customers in production (Broker v2, Sep 2026)</div></div></div><p class="pull-quote">“Governance was part of building, not a check added afterwards.”</p></div></section>
-<section class="case-study-section"><div class="container"><h3 class="section-title">Context</h3><p>This was not a higher level of the same workflow. It was the IDE beginning to support a new thing to build: after the initial release supported API spec projects and integration projects, the IDE began to support building agent networks. Agent Fabric is a network of agents that can handle problems: a system where multiple agents, not a single workflow, have to be built, orchestrated, and governed. A developer could no longer just ask “does this step work?” — they had to ask “what is each agent, what can it do, and who is it acting for?”</p></div></section>
-<section class="case-study-section"><div class="container"><h3 class="section-title">Problem</h3><p>Authoring a multi-agent system is a system-design problem. If identity, orchestration, and governance are only visible after the system runs, the developer discovers problems too late, when they are already expensive to fix.</p></div></section>
+<section class="case-study-section"><div class="container"><h3 class="section-title">Context</h3><p>After the initial release supported API spec projects and integration projects, the IDE began to support a new thing to build: agent networks. Agent Fabric is a network of agents that can handle problems — multiple agents, not a single workflow, to be built, orchestrated, and governed.</p></div></section>
+<section class="case-study-section"><div class="container"><h3 class="section-title">Problem</h3><p class="problem-lede">If identity, orchestration, and governance are only visible after the system runs, the developer discovers problems too late — when they are already expensive to fix.</p></div></section>
 <section class="case-study-section"><div class="container"><h3 class="section-title">Role and scope</h3><p>Sole product designer, 0–1, AI chat experience. Same 30–40-person team scale as Case 1.</p></div></section>
-<section class="case-study-section"><div class="container"><h3 class="section-title">Approach</h3><ul><li><strong>Make structure visible at authoring time.</strong> The authoring experience had to show, while the developer was building, what each agent is, how agents connect, and what governance applies to each one.</li><li><strong>Separate design from adoption in the telling,</strong> but keep them in the same case: the authoring design first, the adoption numbers as evidence that the design held up in real use.</li><li><strong>Keep broker and production language at stage level.</strong> The point is that authoring led somewhere real — POCs progressing, production reached — not which specific customer reached it.</li></ul></div></section>
-<section class="case-study-section"><div class="container"><h3 class="section-title">Outcome</h3><p>Community adoption, Feb–Sep 2026, aggregate, no individual data:</p><ul><li>157 total users since launch; 2,258 logins Feb–Sep 2026; 8 months active continuous.</li><li>Peak month August 2026: 719 logins, 90 users.</li><li>September is partial (as of the 18th): 217 logins, 75 unique users.</li><li>Broker v2, anonymized by count and stage only: multiple customer POCs progressing toward production, including 2 customers in production as of September 2026. No customer names.</li></ul></div></section>
-<section class="case-study-section"><div class="container"><h3 class="section-title">Reflection</h3><p>Adoption did not come from adding more controls. It came from making the system&#x27;s structure — what each agent is, what it can do, and who it acts for — visible at authoring time, so governance was part of building, not a check added afterwards.</p></div></section>
+<section class="case-study-section"><div class="container"><h3 class="section-title">Approach</h3><ol><li><strong>Make structure visible at authoring time.</strong> While building, the developer sees what each agent is, how agents connect, and what governance applies to each one.</li><li><strong>Tell design and adoption separately, in the same case.</strong> The authoring design first; the adoption numbers as evidence the design held up in real use.</li><li><strong>Keep broker and production language at stage level.</strong> The point is that authoring led somewhere real — POCs progressing, production reached — not which customer reached it.</li></ol></div></section>
+<section class="case-study-section"><div class="container"><h3 class="section-title">Outcome</h3><p>Peak month August 2026: 719 logins, 90 users. Broker v2, anonymized by count and stage only: multiple customer POCs progressing toward production, including 2 customers in production as of September 2026.</p></div></section>
 <section class="case-study-section"><div class="container"><h3 class="section-title">Visuals</h3><figure style="margin:24px 0"><div style="min-height:180px;border:1px dashed #d8dee3;background:#f7f9fa;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#6b7280;font-size:14px">图片待补充</div><figcaption style="color:#282f40;font-size:14px;margin-top:8px"><strong>图位 1 — Authoring Canvas</strong> — 需要图：Agent authoring 画布重画，含 agent、broker、governance 三类元素，匿名示例内容，不要用内部截图，不要出现客户名</figcaption></figure><figure style="margin:24px 0"><div style="min-height:180px;border:1px dashed #d8dee3;background:#f7f9fa;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#6b7280;font-size:14px">图片待补充</div><figcaption style="color:#282f40;font-size:14px;margin-top:8px"><strong>图位 2 — Authoring → Production 阶段图</strong> — 需要图：从 authoring 到 production 的阶段图，只写阶段（POC → production），不要出现客户名</figcaption></figure></section>
 
 

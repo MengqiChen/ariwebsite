@@ -200,6 +200,26 @@
     margin: 36px 0 8px;
     max-width: 900px;
   }
+
+  /* Trim pass 2026-11-15: problem statement + ordered lists */
+  .problem-lede {
+    font-family: 'Source Serif 4', serif;
+    font-size: 28px;
+    line-height: 1.4;
+    color: #282f40;
+  }
+  .case-study-section ol {
+    font-family: 'aktiv-grotesk', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    padding-left: 24px;
+    color: #282f40;
+  }
+  .case-study-section ol li {
+    margin-bottom: 12px;
+    color: #282f40;
+  }
   
   /* Catch-all: Ensure all text in case study sections has sufficient contrast */
   .case-study-section * {
@@ -1101,11 +1121,10 @@
   
   <section class="case-study-section case-study-hero"><div class="container"><h1>UX harness: making design quality repeatable across teams</h1><p>Case 4 — MuleSoft&#x27;s new design process, built alongside the product cases.</p><p>Senior Product Designer, Salesforce (MuleSoft), Bay Area. Sole designer on 0–1 products, in 30–40-person cross-functional teams.</p><p class="hero-outcome">Outcome: a repeatable process used across product verticals — quality gates, a pattern library, and handoff hooks.</p><p class="pull-quote">“It was about making the good decision the easy decision, so quality did not depend on who happened to review a file.”</p></div></section>
 <section class="case-study-section"><div class="container"><h3 class="section-title">Context</h3><p>MuleSoft&#x27;s new design process, built alongside the product cases above. As more products and designers joined, design quality depended too much on individual review. The process itself needed a system.</p></div></section>
-<section class="case-study-section"><div class="container"><h3 class="section-title">Problem</h3><p>How do you make the good decision the easy decision, so quality does not depend on who happened to review a file?</p></div></section>
+<section class="case-study-section"><div class="container"><h3 class="section-title">Problem</h3><p class="problem-lede">How do you make the good decision the easy decision, so quality does not depend on who happened to review a file?</p></div></section>
 <section class="case-study-section"><div class="container"><h3 class="section-title">Role and scope</h3><p>Contributor to building the new design process framework, alongside product design work.</p></div></section>
-<section class="case-study-section"><div class="container"><h3 class="section-title">Approach</h3><ul><li><strong>UX harness framework:</strong> quality gates that a design passes through before it ships.</li><li><strong>UX pattern Storybook library:</strong> reusable patterns so teams do not re-solve the same interaction.</li><li><strong>Hooks:</strong> points where the process connects to real product work, rather than sitting beside it.</li><li><strong>Prototyping directly with Claude in the dev repository in 2026,</strong> so design decisions could be tested in code, not only in Figma.</li><li>The platform-wide rebuild and the unified skill-rule-token system from the resume are the system context for this case: <strong>The harness introduced gates, patterns, and hooks to make the good decision easier,</strong> but it did not by itself make the platform&#x27;s design system consistent across verticals.</li></ul></div></section>
-<section class="case-study-section"><div class="container"><h3 class="section-title">Outcome</h3><ul><li>A repeatable process used across product verticals, with the platform-wide rebuild as its system context.</li><li>No invented efficiency percentage is claimed for the harness itself; the outcome is adoption of the process, not a made-up time saving.</li></ul></div></section>
-<section class="case-study-section"><div class="container"><h3 class="section-title">Reflection</h3><p>The harness was not about adding process for its own sake. It was about making the good decision the easy decision, so quality did not depend on who happened to review a file.</p></div></section>
+<section class="case-study-section"><div class="container"><h3 class="section-title">Approach</h3><ul><li><strong>Quality gates:</strong> a design passes through gates before it ships.</li><li><strong>Pattern library:</strong> reusable Storybook patterns, so teams don&#x27;t re-solve the same interaction.</li><li><strong>Hooks:</strong> points where the process connects to real product work, rather than sitting beside it.</li><li><strong>Prototype in code:</strong> in 2026, prototyping directly with Claude in the dev repository, so decisions could be tested in code, not only in Figma.</li><li><strong>The harness introduced gates, patterns, and hooks to make the good decision easier</strong> — but it did not by itself make the platform&#x27;s design system consistent across verticals.</li></ul></div></section>
+<section class="case-study-section"><div class="container"><h3 class="section-title">Outcome</h3><p>Adoption of the process is the outcome — no invented efficiency percentage claimed.</p></div></section>
 <section class="case-study-section"><div class="container"><h3 class="section-title">Visuals</h3><figure style="margin:24px 0"><div style="min-height:180px;border:1px dashed #d8dee3;background:#f7f9fa;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#6b7280;font-size:14px">图片待补充</div><figcaption style="color:#282f40;font-size:14px;margin-top:8px"><strong>图位 1 — Quality Gate 流程</strong> — 需要图：quality gate 流程图，从 pattern 选择 → review → ship</figcaption></figure><figure style="margin:24px 0"><div style="min-height:180px;border:1px dashed #d8dee3;background:#f7f9fa;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#6b7280;font-size:14px">图片待补充</div><figcaption style="color:#282f40;font-size:14px;margin-top:8px"><strong>图位 2 — Storybook Pattern 示例</strong> — 需要图：Storybook pattern 的通用匿名示例，不要用内部组件截图</figcaption></figure><figure style="margin:24px 0"><div style="min-height:180px;border:1px dashed #d8dee3;background:#f7f9fa;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#6b7280;font-size:14px">图片待补充</div><figcaption style="color:#282f40;font-size:14px;margin-top:8px"><strong>图位 3 — Claude Prototyping 交接图</strong> — 需要图：Claude 在 dev repo 里做 prototyping 如何接入 design-to-code 交接的示意图</figcaption></figure></section>
 
 
